@@ -3,6 +3,6 @@ services:
   tomcat:
     image: 'tomcat'
     ports:
-      _ "8080-8090:8080"
+      - '8080-8090:8080'
     volumes:
-      - "/mnt/Deployment:usr/local/tomcat/webapps"
+      - "/mnt/Deployment:/usr/local/tomcat/webapps"
