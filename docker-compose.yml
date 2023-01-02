@@ -6,3 +6,12 @@ services:
       - '8080-8090:8080'
     volumes:
       - "/mnt/jenkins-slave:/usr/local/tomcat/webapps"
+
+version: '3'
+services:
+  tomcat:
+    image: 'tomcat:9'
+    ports:
+      - '8090:8080'
+    volumes:
+      - "/mnt/jenkins-slave:/usr/local/tomcat/webapps"
